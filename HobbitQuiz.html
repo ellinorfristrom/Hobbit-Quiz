@@ -18,7 +18,7 @@
       padding: 0px 50px 0px;
     }
     body {
-      background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/941/original/zp4EAN%28mine3%29.jpg?1628516231");
+      background-image: url("./assets/zp4EAN(mine3).jpg");
       background-color: #060e11;
       background-size: cover;
       background-repeat: no-repeat;
@@ -107,18 +107,18 @@
     <img
       id="imgHeading"
       class="imgHeading"
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/939/original/WouldYouSurviveAMeetingWithGollum.png?1628516191"
+      src="./assets/WouldYouSurviveAMeetingWithGollum.png"
       width="900px"
     />
     <img
       id="imgQOne"
       class="imgQOne"
-      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/932/original/Riddle1New.png?1628516136"
+      src="assets/Riddle1New.png"
       width="650px"
     />
     <button id="beginbutton" class="beginbutton">
       <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/930/original/button.png?1628516119"
+        src="assets/button.png"
         width="225px"
       />
     </button>
@@ -143,23 +143,25 @@
       viewAnswerThree.style.display = "none";
       viewAnswerFour.style.display = "none";
       viewAnswerFive.style.display = "none";
- function questionfive() {
+ 
+ 
+      function questionfive() {
         let answerfive = prompt("What am I?");
         answerfive = answerfive.toLowerCase();
         answerfive = answerfive.trim();
         if (answerfive === "time" || answerfive === "the time") {
           document.getElementById("imgHeading").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/938/original/WellDone!.png?1628516183";
+            "./assets/WellDone!.png";
           fifthbutton.style.display = "none";
           viewAnswerFive.style.display = "none";
           document.getElementById("imgHeading").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/931/original/ConYouMadeItOutAlive.png?1628516127";
+            "./assets/ConYouMadeItOutAlive.png";
           document.getElementById("imgQOne").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/937/original/ring.png?1628516176";
+            "./assets/ring.png";
         } else {
           fifthbutton.innerHTML = "Wrong, try Again!";
         viewAnswerFive.style.display = "block";
-        document.getElementById("imgHeading").src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/940/original/YouDidn'tMakeItOutAlive.png?1628516197";
+        document.getElementById("imgHeading").src = "./assets/YouDidn'tMakeItOutAlive.png";
         }
       }
       function questionfour() {
@@ -172,18 +174,16 @@
           answerfour === "fishes"
         ) {
           document.getElementById("imgHeading").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/938/original/WellDone!.png?1628516183";
+            "./assets/WellDone!.png";
           fourthbutton.style.display = "none";
           fifthbutton.style.display = "block";
           viewAnswerFour.style.display = "none";
           document.getElementById("imgQOne").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/936/original/Riddle5New.png?1628516169";
-          //beginbutton.style.display = "block";
-          //beginbutton.innerHTML = "Play again!";
+            "./assets/Riddle5New.png";
         } else {
           fourthbutton.innerHTML = "Wrong, try Again!";
            viewAnswerFour.style.display = "block";
-           document.getElementById("imgHeading").src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/940/original/YouDidn'tMakeItOutAlive.png?1628516197";
+           document.getElementById("imgHeading").src = "./assets/YouDidn'tMakeItOutAlive.png";
         }
       }
       function questionthree() {
@@ -196,16 +196,16 @@
           answerthree === "the dark"
         ) {
           document.getElementById("imgHeading").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/938/original/WellDone!.png?1628516183";
+            "./assets/WellDone!.png";
           thirdbutton.style.display = "none";
           fourthbutton.style.display = "block";
           viewAnswerThree.style.display = "none";
           document.getElementById("imgQOne").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/935/original/Riddle4New.png?1628516163";
+            "./assets/Riddle4New.png";
         } else {
           thirdbutton.innerHTML = "Wrong, try Again!";
           viewAnswerThree.style.display = "block";
-          document.getElementById("imgHeading").src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/940/original/YouDidn'tMakeItOutAlive.png?1628516197";
+          document.getElementById("imgHeading").src = "./assets/YouDidn'tMakeItOutAlive.png";
 
         }
       }
@@ -219,16 +219,16 @@
           answertwo === "the wind"
         ) {
           document.getElementById("imgHeading").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/938/original/WellDone!.png?1628516183";
+            "./assets/WellDone!.png";
           secondbutton.style.display = "none";
           thirdbutton.style.display = "block";
           viewAnswerTwo.style.display = "none";
           document.getElementById("imgQOne").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/934/original/Riddle3New.png?1628516155";
+            "./assets/Riddle3New.png?1628516155";
         } else {
           secondbutton.innerHTML = "Wrong, try Again!";
           viewAnswerTwo.style.display = "block";
-          document.getElementById("imgHeading").src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/940/original/YouDidn'tMakeItOutAlive.png?1628516197";
+          document.getElementById("imgHeading").src = "./assets/YouDidn'tMakeItOutAlive.png";
 
         }
       }
@@ -247,18 +247,18 @@
           firstquestion === "a mountain"
         ) {
           document.getElementById("imgHeading").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/938/original/WellDone!.png?1628516183";
+            "./assets/WellDone!.png";
           beginbutton.style.display = "none";
           secondbutton.style.display = "block";
                 viewAnswerOne.style.display = "none";
 
           document.getElementById("imgQOne").src =
-            "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/933/original/Riddle2New.png?1628516145";
+            "./assets/Riddle2New.png";
         } else {
           beginbutton.style.display = "block";
           beginbutton.innerHTML = "Wrong, try Again!";
           viewAnswerOne.style.display = "block";
-          document.getElementById("imgHeading").src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/014/940/original/YouDidn'tMakeItOutAlive.png?1628516197";
+          document.getElementById("imgHeading").src = "./assets/YouDidn'tMakeItOutAlive.png";
 
         }
       }
